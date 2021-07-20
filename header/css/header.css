@@ -1,0 +1,244 @@
+.header__container {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.header__upper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 160px;
+	background-color: #000;
+}
+
+.header__logo {
+	flex: 0 0 173px;
+}
+
+.header__logo_img {
+	width: 100%;
+}
+
+.header-menu {
+	display: flex;
+	align-items: center;
+	margin-right: 85px;
+}
+
+.header-menu__item {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.header-menu__item:not(:last-child) {
+	margin-right: 62px;
+}
+
+.header__login {
+	position: relative;
+	padding-left: 20px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.header__login::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 6px;
+	width: 13px;
+	height: 13px;
+	background: url('../img/login_icon.svg') left / cover no-repeat transparent;
+}
+
+.header__lower {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 23px 160px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.artstyle-list {
+	display: flex;
+	align-items: flex-start;
+}
+
+.artstyle-list>li:hover .artstyle-sub-list {
+	visibility: visible;
+	opacity: 1;
+	transition-delay: 0s, 0s;
+	cursor: pointer;
+}
+
+.artstyle-list>li:hover .artstyle-list__link::before {
+	transform: rotate(40deg);
+	transition: transform .3s ease-in;
+}
+
+.artstyle-list>li:hover .artstyle-list__link::after {
+	transform: rotate(-40deg);
+	transition: transform .3s ease-in;
+}
+
+.artstyle-list__item {
+	position: relative;
+	margin-right: 97px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.artstyle-list__link {
+	position: relative;
+	padding-right: 16px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.artstyle-list__link::before,
+.artstyle-list__link::after {
+	content: '';
+	position: absolute;
+	width: 7px;
+	height: 1px;
+	background-color: #fff;
+	top: 13px;
+	transition: transform .3s ease-in;
+}
+
+.artstyle-list__link::before {
+	transform: rotate(-40deg);
+	right: 0;
+}
+
+.artstyle-list__link::after {
+	transform: rotate(40deg);
+	right: 5px;
+}
+
+.artstyle-sub-list {
+	position: absolute;
+	left: -40px;
+	top: 0;
+	padding: 40px;
+	width: 300px;
+	max-height: 300px;
+	visibility: hidden;
+	opacity: 0;
+	transition-property: opacity, visibility;
+	transition-duration: .3s, 0s;
+	transition-delay: 0s, .3s;
+}
+
+.artstyle-sub-list__item {
+	position: relative;
+	width: 220px;
+	height: 40px;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 19px;
+	background: url('../img/header_sub_list_img.png') center / cover no-repeat transparent;
+}
+
+.artstyle-sub-list__item:not(:last-child) {
+	margin-bottom: 20px;
+}
+
+.artstyle-sub-list__link {
+	position: absolute;
+	padding: 9px 0 12px 14px;
+}
+
+.simplebar-track.simplebar-vertical {
+	top: 40px;
+	width: 2px;
+}
+
+.simplebar-vertical {
+	width: 2px;
+	height: 220px;
+	background-color: #000;
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar {
+	height: 28px !important;
+	background-color: #fff;
+}
+
+.header__search-box {
+	position: relative;
+	padding-left: 32px;
+}
+
+.search-box__icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 22.5px;
+	height: 22.5px;
+	background: url('../img/search_icon.svg') center / cover no-repeat transparent;
+}
+
+.search-box__input {
+	max-width: 218px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+	border: none;
+	border-bottom: 1px solid #fff;
+	background-color: transparent;
+}
+
+.search-box__input::placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.search-box__input::-moz-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.search-box__input:-moz-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.search-box__input:-ms-placeholder {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.search-box__input:focus::placeholder {
+	color: transparent;
+}
+
+.search-box__input:focus::-moz-placeholder {
+	color: transparent;
+}
+
+.search-box__input:focus:-moz-placeholder {
+	color: transparent;
+}
+
+.search-box__input:focus:-ms-placeholder {
+	color: transparent;
+}
