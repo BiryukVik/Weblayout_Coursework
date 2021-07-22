@@ -64,9 +64,9 @@ html {
 }
 
 .container {
-  max-width: 1920px;
+  max-width: 1703px;
   margin: 0 auto;
-  padding: 0 160px;
+  padding: 0 50px;
 }
 
 .list {
