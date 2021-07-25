@@ -16,6 +16,11 @@
 	<header class="header">
 		<div class="header__upper">
 			<div class="header__container-upper container">
+				<div class="header__burger header-burger">
+					<span class="header-burger__line_1"></span>
+					<span class="header-burger__line_2"></span>
+					<span class="header-burger__line_2"></span>
+				</div>
 				<a href="" class="header__logo link">
 					<img src="./header/img/header_logo.svg" alt="Логотип художественной галереи Blanchard" class="header__logo_img">
 				</a>
@@ -65,21 +70,21 @@
 					Войти
 				</button>
 				<form action="" method="POST" class="header__form-upper">
-					<button type="submit" class="search-box__icon button"></button>
+					<button type="submit" class="search-box__icon_upper button"></button>
 				</form>
 			</div>
 		</div>
 		<div class="header__lower">
 			<div class="header__container-lower container">
 				<ul class="header__artstyle-list artstyle-list list">
-					<li class="artstyle-list__item" data-tab="#artstyle__item-1">
-						<a href="" class="artstyle-list__link link">
+					<li class="artstyle-list__item" tabindex="0">
+						<a href="#" class="artstyle-list__link link">
 							Реализм
 						</a>
 						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M11 1L6 6L1 1" stroke="white"/>
 						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar id="artstyle__item-1">
+							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar>
 								<li class="artstyle-sub-list__item">
 									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
 								</li>
@@ -115,14 +120,14 @@
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" data-tab="#artstyle__item-2">
-						<a href="" class="artstyle-list__link link">
+					<li class="artstyle-list__item" tabindex="0">
+						<a href="#" class="artstyle-list__link link">
 							Импрессионизм
 						</a>
 						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M11 1L6 6L1 1" stroke="white"/>
 						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list" id="artstyle__item-2">
+							<ul class="header__artstyle-sub-list artstyle-sub-list list">
 								<li class="artstyle-sub-list__item">
 									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
 								</li>
@@ -137,14 +142,14 @@
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" data-tab="#artstyle__item-3">
-						<a href="" class="artstyle-list__link link">
+					<li class="artstyle-list__item" tabindex="0">
+						<a href="#" class="artstyle-list__link link">
 							Постимпрессионизм
 						</a>
 						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M11 1L6 6L1 1" stroke="white"/>
 						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list" id="artstyle__item-3">
+							<ul class="header__artstyle-sub-list artstyle-sub-list list">
 								<li class="artstyle-sub-list__item">
 									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
 								</li>
@@ -159,14 +164,14 @@
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" data-tab="#artstyle__item-4">
-						<a href="" class="artstyle-list__link link">
+					<li class="artstyle-list__item" tabindex="0">
+						<a href="#" class="artstyle-list__link link">
 							Авангард
 						</a>
 						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M11 1L6 6L1 1" stroke="white"/>
 						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list" id="artstyle__item-4">
+							<ul class="header__artstyle-sub-list artstyle-sub-list list">
 								<li class="artstyle-sub-list__item">
 									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
 								</li>
@@ -181,14 +186,14 @@
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" data-tab="#artstyle__item-5">
-						<a href="" class="artstyle-list__link link">
+					<li class="artstyle-list__item" tabindex="0">
+						<a href="#" class="artstyle-list__link link">
 							Футуризм
 						</a>
 						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M11 1L6 6L1 1" stroke="white"/>
 						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list" id="artstyle__item-5">
+							<ul class="header__artstyle-sub-list artstyle-sub-list list">
 								<li class="artstyle-sub-list__item">
 									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
 								</li>
@@ -211,5 +216,8 @@
 			</div>
 		</div>
 	</header>
+
+	<script src="./header/js/header-sub-menu.js"></script>
+	<script src="./header/js/header-burger.js"></script>
 </body>
 </html>
