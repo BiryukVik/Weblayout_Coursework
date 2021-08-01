@@ -41,7 +41,7 @@
 }
 
 *:focus {
-  outline: none;
+  outline: 0;
 }
 
 html {
@@ -51,7 +51,9 @@ html {
 :root {
   --dark-purple: #7943a4;
   --purple: #9d5cd0;
+  --lavender: #c283f3;
   --light-purple: #d1a9f0;
+  --graphite: #18171b;
   --dark-gray: #333;
   --gray: #666;
   --light-gray: #999;
@@ -64,7 +66,7 @@ html {
 }
 
 .container {
-  max-width: 1703px;
+  max-width: 1700px;
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
@@ -87,6 +89,10 @@ html {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+
+.heading {
+  margin: 0;
 }
 
 @media screen and (max-width: 1024px) {

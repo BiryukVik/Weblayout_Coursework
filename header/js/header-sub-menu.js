@@ -5,7 +5,7 @@ document.querySelectorAll(".artstyle-list__link").forEach(item => {
     listOpen.classList.toggle("active-sub-list");
     document.querySelectorAll(".artstyle-sub-list").forEach(element => {
       if (listOpen !=element) {
-        element.classList.remove("active-art-list-item");
+        element.classList.remove("active-sub-list");
       }
     });
   });

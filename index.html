@@ -7,10 +7,13 @@
 	<title>Blanchard</title>
 	<script src="./jquery-3.6.0.min.js"></script>
 	<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="./normalize.css">
 	<link rel="stylesheet" href="./common.css">
 	<link rel="stylesheet" href="./header/css/header.css">
+	<link rel="stylesheet" href="./hero/css/hero.css">
 </head>
 <body>
 	<header class="header">
@@ -24,187 +27,295 @@
 				<a href="" class="header__logo link">
 					<img src="./header/img/header_logo.svg" alt="Логотип художественной галереи Blanchard" class="header__logo_img">
 				</a>
-				<nav class="header__nav">
-					<ul class="header__menu header-menu list">
-						<li class="header-menu__item" tabindex="0">
-							<a href="" class="header-menu__link link">
-								О нас
-							</a>
-						</li>
-						<li class="header-menu__item" tabindex="0">
-							<a href="" class="header-menu__link link">
-								Галерея
-							</a>
-						</li>
-						<li class="header-menu__item" tabindex="0">
-							<a href="" class="header-menu__link link">
-								Каталог
-							</a>
-						</li>
-						<li class="header-menu__item" tabindex="0">
-							<a href="" class="header-menu__link link">
-								События
-							</a>
-						</li>
-						<li class="header-menu__item" tabindex="0">
-							<a href="" class="header-menu__link link">
-								Издания
-							</a>
-						</li>
-						<li class="header-menu__item" tabindex="0">
-							<a href="" class="header-menu__link link">
-								Проекты
-							</a>
-						</li>
-						<li class="header-menu__item" tabindex="0">
-							<a href="" class="header-menu__link link">
-								Контакты
-							</a>
-						</li>
-					</ul>
-				</nav>
-				<button class="header__login header-login button">
-					<svg class="header-login__icon" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+				<div class="header__burger-menu">
+					<nav class="header__nav">
+						<ul class="header__menu header-menu list">
+							<li class="header-menu__item">
+								<a href="" class="header-menu__link link">
+									О нас
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="" class="header-menu__link link">
+									Галерея
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="" class="header-menu__link link">
+									Каталог
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="" class="header-menu__link link">
+									События
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="" class="header-menu__link link">
+									Издания
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="" class="header-menu__link link">
+									Проекты
+								</a>
+							</li>
+							<li class="header-menu__item">
+								<a href="" class="header-menu__link link">
+									Контакты
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<button class="header__login header-login button">
+						<svg class="header-login__icon" width="13" height="13" viewbox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z" fill="white"/>
+						</svg>
+						Войти
+					</button>
+				</div>
+				<form action="" method="POST" class="header__form-upper search-box">
+					<button type="submit" class="search-box__icon search-box__icon_upper button"></button>
+					<input type="text" name="" class="search-box__input search-box__input_upper">
+					<svg class="search-box__closed" width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.7">
+						<rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
+						<rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+						</g>
 					</svg>
-					Войти
-				</button>
-				<form action="" method="POST" class="header__form-upper">
-					<button type="submit" class="search-box__icon_upper button"></button>
 				</form>
 			</div>
 		</div>
 		<div class="header__lower">
 			<div class="header__container-lower container">
 				<ul class="header__artstyle-list artstyle-list list">
-					<li class="artstyle-list__item" tabindex="0">
+					<li class="artstyle-list__item">
 						<a href="#" class="artstyle-list__link link">
 							Реализм
+							<svg class="artstyle-list__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
 						</a>
-						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11 1L6 6L1 1" stroke="white"/>
-						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
+							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar data-simplebar-scrollbar-max-size="28">
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_tintoretto">
+									<a href="" class="artstyle-sub-list__link link">Тинторетто</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №2</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_frederick">
+									<a href="" class="artstyle-sub-list__link link">Фридрих</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №3</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_leonardo">
+									<a href="" class="artstyle-sub-list__link link">Леонардо</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №4</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_verrocchio">
+									<a href="" class="artstyle-sub-list__link link">Веррокьо</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №5</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_tintoretto">
+									<a href="" class="artstyle-sub-list__link link">Тинторетто</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №6</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_frederick">
+									<a href="" class="artstyle-sub-list__link link">Фридрих</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №7</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_leonardo">
+									<a href="" class="artstyle-sub-list__link link">Леонардо</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №8</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_verrocchio">
+									<a href="" class="artstyle-sub-list__link link">Веррокьо</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №9</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_tintoretto">
+									<a href="" class="artstyle-sub-list__link link">Тинторетто</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №10</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_frederick">
+									<a href="" class="artstyle-sub-list__link link">Фридрих</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №11</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_leonardo">
+									<a href="" class="artstyle-sub-list__link link">Леонардо</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_verrocchio">
+									<a href="" class="artstyle-sub-list__link link">Веррокьо</a>
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" tabindex="0">
+					<li class="artstyle-list__item">
 						<a href="#" class="artstyle-list__link link">
 							Импрессионизм
+							<svg class="artstyle-list__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
 						</a>
-						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11 1L6 6L1 1" stroke="white"/>
-						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list">
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
+							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar data-simplebar-scrollbar-max-size="28">
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_monet">
+									<a href="" class="artstyle-sub-list__link link">Моне</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №2</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_sisley">
+									<a href="" class="artstyle-sub-list__link link">Сислей</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №3</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_manet">
+									<a href="" class="artstyle-sub-list__link link">Мане</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №4</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_renoir">
+									<a href="" class="artstyle-sub-list__link link">Ренуар</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_monet">
+									<a href="" class="artstyle-sub-list__link link">Моне</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_sisley">
+									<a href="" class="artstyle-sub-list__link link">Сислей</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_manet">
+									<a href="" class="artstyle-sub-list__link link">Мане</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_renoir">
+									<a href="" class="artstyle-sub-list__link link">Ренуар</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_monet">
+									<a href="" class="artstyle-sub-list__link link">Моне</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_sisley">
+									<a href="" class="artstyle-sub-list__link link">Сислей</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_manet">
+									<a href="" class="artstyle-sub-list__link link">Мане</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_renoir">
+									<a href="" class="artstyle-sub-list__link link">Ренуар</a>
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" tabindex="0">
+					<li class="artstyle-list__item">
 						<a href="#" class="artstyle-list__link link">
 							Постимпрессионизм
+							<svg class="artstyle-list__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
 						</a>
-						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11 1L6 6L1 1" stroke="white"/>
-						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list">
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
+							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar data-simplebar-scrollbar-max-size="28">
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_van-gogh">
+									<a href="" class="artstyle-sub-list__link link">Ван Гог</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №2</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_cezanne">
+									<a href="" class="artstyle-sub-list__link link">Сезанн</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №3</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_gauguin">
+									<a href="" class="artstyle-sub-list__link link">Гоген</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №4</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_seurat">
+									<a href="" class="artstyle-sub-list__link link">Сёра</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__link_van-gogh">
+									<a href="" class="artstyle-sub-list__link link">Ван Гог</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_cezanne">
+									<a href="" class="artstyle-sub-list__link link">Сезанн</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_gauguin">
+									<a href="" class="artstyle-sub-list__link link">Гоген</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_seurat">
+									<a href="" class="artstyle-sub-list__link link">Сёра</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__link_van-gogh">
+									<a href="" class="artstyle-sub-list__link link">Ван Гог</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_cezanne">
+									<a href="" class="artstyle-sub-list__link link">Сезанн</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_gauguin">
+									<a href="" class="artstyle-sub-list__link link">Гоген</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_seurat">
+									<a href="" class="artstyle-sub-list__link link">Сёра</a>
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" tabindex="0">
+					<li class="artstyle-list__item">
 						<a href="#" class="artstyle-list__link link">
 							Авангард
+							<svg class="artstyle-list__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
 						</a>
-						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11 1L6 6L1 1" stroke="white"/>
-						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list">
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
+							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar data-simplebar-scrollbar-max-size="28">
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_kandinsky">
+									<a href="" class="artstyle-sub-list__link link">Кандинский</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №2</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_marinetti">
+									<a href="" class="artstyle-sub-list__link link">Маринетти</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №3</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_malevich">
+									<a href="" class="artstyle-sub-list__link link">Малевич</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №4</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_picasso">
+									<a href="" class="artstyle-sub-list__link link">Пикассо</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_kandinsky">
+									<a href="" class="artstyle-sub-list__link link">Кандинский</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_marinetti">
+									<a href="" class="artstyle-sub-list__link link">Маринетти</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_malevich">
+									<a href="" class="artstyle-sub-list__link link">Малевич</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_picasso">
+									<a href="" class="artstyle-sub-list__link link">Пикассо</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_kandinsky">
+									<a href="" class="artstyle-sub-list__link link">Кандинский</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_marinetti">
+									<a href="" class="artstyle-sub-list__link link">Маринетти</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_malevich">
+									<a href="" class="artstyle-sub-list__link link">Малевич</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_picasso">
+									<a href="" class="artstyle-sub-list__link link">Пикассо</a>
 								</li>
 							</ul>
 					</li>
-					<li class="artstyle-list__item" tabindex="0">
+					<li class="artstyle-list__item">
 						<a href="#" class="artstyle-list__link link">
 							Футуризм
+							<svg class="artstyle-list__icon" width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 1L6 6L1 1" stroke="white"/>
+							</svg>
 						</a>
-						<svg width="12" height="7" viewbox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path d="M11 1L6 6L1 1" stroke="white"/>
-						</svg>
-							<ul class="header__artstyle-sub-list artstyle-sub-list list">
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №1</a>
+							<ul class="header__artstyle-sub-list artstyle-sub-list list" data-simplebar data-simplebar-scrollbar-max-size="28">
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_carra">
+									<a href="" class="artstyle-sub-list__link link">Карра</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №2</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_pratella">
+									<a href="" class="artstyle-sub-list__link link">Прателла</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №3</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_severini">
+									<a href="" class="artstyle-sub-list__link link">Северини</a>
 								</li>
-								<li class="artstyle-sub-list__item">
-									<a href="" class="artstyle-sub-list__link link">Элемент списка №4</a>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_balla">
+									<a href="" class="artstyle-sub-list__link link">Балла</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_carra">
+									<a href="" class="artstyle-sub-list__link link">Карра</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_pratella">
+									<a href="" class="artstyle-sub-list__link link">Прателла</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_severini">
+									<a href="" class="artstyle-sub-list__link link">Северини</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_balla">
+									<a href="" class="artstyle-sub-list__link link">Балла</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_carra">
+									<a href="" class="artstyle-sub-list__link link">Карра</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_pratella">
+									<a href="" class="artstyle-sub-list__link link">Прателла</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_severini">
+									<a href="" class="artstyle-sub-list__link link">Северини</a>
+								</li>
+								<li class="artstyle-sub-list__item artstyle-sub-list__item_balla">
+									<a href="" class="artstyle-sub-list__link link">Балла</a>
 								</li>
 							</ul>
 					</li>
@@ -217,7 +328,34 @@
 		</div>
 	</header>
 
+	<main class="main">
+		<section class="hero section">
+			<div class="hero__container container">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide swiper-slide-one"></div>
+						<div class="swiper-slide swiper-slide-two"></div>
+						<div class="swiper-slide swiper-slide-three"></div>
+					</div>
+				</div>
+				<div class="hero__content">
+					<h1 class="hero__heading heading">
+						Прикоснитесь к прекрасному
+					</h1>
+					<p class="hero__description">
+						Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.
+					</p>
+					<a href="" class="hero__subscribe link">
+						Подписаться на рассылку
+					</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
 	<script src="./header/js/header-sub-menu.js"></script>
 	<script src="./header/js/header-burger.js"></script>
+	<script src="./header/js/burger-search-form.js"></script>
+	<script src="./hero/js/hero-swiper.js"></script>
 </body>
 </html>
