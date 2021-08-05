@@ -1,0 +1,15 @@
+/* HEADER */
+
+@media screen and (max-width: 1366px) {
+  .header__logo {
+    margin-right: 4%;
+  }
+
+  .header-menu__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .artstyle-list__item {
+    margin-right: 50px;
+  }
+}

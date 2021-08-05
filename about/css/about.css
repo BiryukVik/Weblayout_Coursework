@@ -1,0 +1,12 @@
+.about__heading {
+  margin-bottom: 20px;
+  color: var(--dark-gray);
+}
+
+.about__description {
+  max-width: 1080px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--dark-gray);
+}

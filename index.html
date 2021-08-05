@@ -14,10 +14,16 @@
 	<link rel="stylesheet" href="./common.css">
 	<link rel="stylesheet" href="./header/css/header.css">
 	<link rel="stylesheet" href="./hero/css/hero.css">
+	<link rel="stylesheet" href="./about/css/about.css">
+	<link rel="stylesheet" href="./gallery/css/gallery.css">
+	<link rel="stylesheet" href="./media/media-1366.css">
+	<link rel="stylesheet" href="./media/media-1200.css">
+	<link rel="stylesheet" href="./media/media-992.css">
+	<link rel="stylesheet" href="./media/media-576.css">
 </head>
 <body>
 	<header class="header">
-		<div class="header__upper">
+		<div class="header__upper header-upper">
 			<div class="header__container-upper container">
 				<div class="header__burger header-burger">
 					<span class="header-burger__line_1"></span>
@@ -74,19 +80,22 @@
 						Войти
 					</button>
 				</div>
-				<form action="" method="POST" class="header__form-upper search-box">
-					<button type="submit" class="search-box__icon search-box__icon_upper button"></button>
-					<input type="text" name="" class="search-box__input search-box__input_upper">
-					<svg class="search-box__closed" width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<g opacity="0.7">
-						<rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
-						<rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
-						</g>
-					</svg>
-				</form>
+				<div class="header-upper__form-container">
+					<button class="header-upper__form-enable button"></button>
+					<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="header-upper__form search-box">
+						<button type="submit" class="search-box__icon search-box__icon_upper button"></button>
+						<input type="text" name="Поиск по сайту" class="search-box__input search-box__input_upper">
+						<svg class="search-box__close" width="29" height="29" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.7">
+							<rect width="37.2801" height="3.72801" transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.63867 0)" fill="white"/>
+							<rect width="37.2801" height="3.72801" transform="matrix(0.707093 -0.707121 0.707093 0.707121 -0.000976562 26.3615)" fill="white"/>
+							</g>
+						</svg>
+					</form>
+				</div>
 			</div>
 		</div>
-		<div class="header__lower">
+		<div class="header__lower header-lower">
 			<div class="header__container-lower container">
 				<ul class="header__artstyle-list artstyle-list list">
 					<li class="artstyle-list__item">
@@ -320,9 +329,9 @@
 							</ul>
 					</li>
 				</ul>
-				<form action="" method="POST" class="header__form-lower">
+				<form action="https://jsonplaceholder.typicode.com/posts" method="POST" class="header-lower__form search-box">
 					<button type="submit" class="search-box__icon button"></button>
-					<input type="text" name="" placeholder="Поиск по сайту" class="search-box__input">
+					<input type="text" name="Поиск по сайту" placeholder="Поиск по сайту" class="search-box__input">
 				</form>
 			</div>
 		</div>
@@ -331,7 +340,7 @@
 	<main class="main">
 		<section class="hero section">
 			<div class="hero__container container">
-				<div class="swiper-container">
+				<div class="hero__swiper swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide swiper-slide-one"></div>
 						<div class="swiper-slide swiper-slide-two"></div>
@@ -348,6 +357,73 @@
 					<a href="" class="hero__subscribe link">
 						Подписаться на рассылку
 					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="about section">
+			<div class="about__container container">
+				<h2 class="about__heading heading">
+					О нас
+				</h2>
+				<p class="about__description">
+					Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и ресурсов. Не следует, однако, забывать, что высококачественный прототип будущего проекта влечет за собой процесс внедрения и модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса распределения внутренних резервов и ресурсов. В рамках спецификации современных стандартов, действия представителей оппозиции набирают популярность среди определенных слоев населения, а значит, должны быть разоблачены.
+				</p>
+			</div>
+		</section>
+
+		<section class="gallery section">
+			<div class="gallery__container container">
+				<div class="gallery__content">
+					<div class="gallery__content-upper">
+						<h2 class="gallery__heading heading">
+							Галерея
+						</h2>
+						<div class="gallery__select gallery-select">
+							<label class="gallery-select__label">
+								Фильтр:
+								<select name="gallery-filter" id="gallery-filter__select" class="gallery-select__main">
+									<option value="painting">Живопись</option>
+									<option value="illustration">Рисунок</option>
+									<option value="sculpture">Скульптура</option>
+								</select>
+							</label>
+						</div>
+					</div>
+					<p class="gallery__notice">
+						Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="" class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией. 
+					</p>
+				</div>
+				<div class="gallery__swiper swiper-container"></div>
+					<div class="swiper-button-prev gallery__swiper-button"></div>
+					<div class="swiper-pagination gallery__pagination"></div>
+					<div class="swiper-button-next gallery__swiper-button"></div>
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+						<div class="swiper-slide"></div>
+					</div>
 				</div>
 			</div>
 		</section>
