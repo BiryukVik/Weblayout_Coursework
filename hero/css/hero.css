@@ -1,9 +1,8 @@
 .hero {
   position: relative;
-  margin-top: -174px;
 }
 
-.swiper-container {
+.hero__swiper {
   position: absolute;
   left: 0;
   top: 0;
@@ -12,22 +11,22 @@
   z-index: -1;
 }
 
-.swiper-slide {
+.hero__swiper-slide {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   transition-duration: 1s !important;
 }
 
-.swiper-slide-one {
+.hero__swiper-slide_1 {
   background-image: url('../img/hero_slide_1.png');
 }
 
-.swiper-slide-two {
+.hero__swiper-slide_2 {
   background-image: url('../img/hero_slide_2.png');
 }
 
-.swiper-slide-three {
+.hero__swiper-slide_3 {
   background-image: url('../img/hero_slide_3.png');
 }
 

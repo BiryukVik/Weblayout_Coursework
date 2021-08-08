@@ -53,12 +53,6 @@
   .swiper-slide-three {
     background-image: url('../hero/img/768/hero_slide_3.png');
   }
-
-  .hero__container {
-    max-width: 768px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
 }
 
 /* ABOUT */

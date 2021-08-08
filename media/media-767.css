@@ -1,6 +1,6 @@
 /* HEADER */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .header__container-upper {
 		padding-top: 12px;
 		padding-bottom: 12px;
@@ -55,11 +55,7 @@
 /* HERO */
 
 
-@media screen and (max-width: 576px) {
-  .hero {
-    margin-top: -50px;
-  }
-
+@media screen and (max-width: 767px) {
   .swiper-slide-one {
     background-image: url('../hero/img/320/hero_slide_1.png');
   }
@@ -111,7 +107,7 @@
 
 /* ABOUT */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 767px) {
   .about__heading {
     margin-bottom: 15px;
     font-size: 28px;
