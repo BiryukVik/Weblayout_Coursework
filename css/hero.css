@@ -1,5 +1,6 @@
 .hero {
   position: relative;
+  height: 800px;
 }
 
 .hero__swiper {
@@ -11,6 +12,15 @@
   z-index: -1;
 }
 
+.swiper-slider {
+  transform: scale(1.1);
+  transition: transform 6s ease-out;
+}
+
+.swiper-slide-duplicate-active {
+  transform: scale(1);
+}
+
 .hero__swiper-slide {
   background-position: center;
   background-size: cover;
@@ -19,15 +29,15 @@
 }
 
 .hero__swiper-slide_1 {
-  background-image: url('../img/hero_slide_1.png');
+  background-image: url('../img/hero/hero_slide_1.png');
 }
 
 .hero__swiper-slide_2 {
-  background-image: url('../img/hero_slide_2.png');
+  background-image: url('../img/hero/hero_slide_2.png');
 }
 
 .hero__swiper-slide_3 {
-  background-image: url('../img/hero_slide_3.png');
+  background-image: url('../img/hero/hero_slide_3.png');
 }
 
 .hero__content {
@@ -56,7 +66,7 @@
 
 .hero__subscribe {
   box-sizing: border-box;
-  padding: 19px 32px;
+  padding: 22px 35px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;

@@ -44,28 +44,56 @@
 		flex: 0 0 97px;
 	}
 
-	.search-box__icon_upper {
-		position: relative;
-		left: unset;
-		width: 18px;
+  .header-upper__form-enable {
+    width: 18px;
 		height: 18px;
-	}
+  }
+
+  .header-upper__form.active {
+    align-items: flex-end;
+    padding: 0 57px 20px 57px;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  .search-box__icon_upper {
+    width: 16px;
+    height: 16px;
+  }
+
+  .search-box__input {
+    max-width: 180px;
+    width: 180px;
+  }
+
+  .search-box__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+  }
 }
 
 /* HERO */
 
 
 @media screen and (max-width: 767px) {
+  .hero {
+    height: 355px;
+  }
+
   .swiper-slide-one {
-    background-image: url('../hero/img/320/hero_slide_1.png');
+    background-image: url('../img/hero/img/320/hero_slide_1.png');
   }
   
   .swiper-slide-two {
-    background-image: url('../hero/img/320/hero_slide_2.png');
+    background-image: url('../img/hero/img/320/hero_slide_2.png');
   }
   
   .swiper-slide-three {
-    background-image: url('../hero/img/320/hero_slide_3.png');
+    background-image: url('../img/hero/img/320/hero_slide_3.png');
   }
 
   .hero__container {
@@ -118,4 +146,48 @@
     font-size: 14px;
     line-height: 28px;
   }
+}
+
+/* HERO */
+
+@media screen and (max-width: 767px) {
+  .gallery__container {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .gallery__heading {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .gallery__content {
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+  .gallery__swiper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .gallery__swiper-navigation {
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .gallery__swiper {
+    margin-bottom: 20px;
+  }
+
+  .gallery__swiper .swiper-wrapper {
+		height: 367px;
+	}
+
+  .gallery .swiper-slide {
+		height: 367px;
+	}
 }

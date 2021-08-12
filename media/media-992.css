@@ -1,37 +1,37 @@
 /* HEADER */
 
 @media screen and (max-width: 992px) {
-  .header-burger.hidden {
-    display: none;
-  }
-
-  .header__logo.hidden {
-    display: none;
-  }
-
-  .header-upper__form-container {
-    width: 27px;
-		height: 27px;
-  }
-
   .header-upper__form-enable {
     width: 27px;
-    height: 27px;
+		height: 27px;
   }
 
-	.header-upper__form.active {
+  .header-upper {
+    position: relative;
+  }
+
+  .header-upper__form.active {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: flex;
-		height: 46px;
-		background-color: #000;
-	}
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 5;
+  }
 
   .search-box__icon_upper {
-		width: 27px;
-		height: 27px;
-	}
+    width: 29px;
+    height: 29px;
+  }
 
-  .search-box__input_upper {
+  .search-box__input {
     max-width: 576px;
+    width: 576px;
   }
 
   .search-box__close {
@@ -43,16 +43,50 @@
 
 @media screen and (max-width: 992px) {
   .swiper-slide-one {
-    background-image: url('../hero/img/768/hero_slide_1.png');
+    background-image: url('../img/hero/img/768/hero_slide_1.png');
   }
   
   .swiper-slide-two {
-    background-image: url('../hero/img/768/hero_slide_2.png');
+    background-image: url('../img/hero/img/768/hero_slide_2.png');
   }
   
   .swiper-slide-three {
-    background-image: url('../hero/img/768/hero_slide_3.png');
+    background-image: url('../img/hero/img/768/hero_slide_3.png');
   }
 }
 
-/* ABOUT */
+/* HERO */
+
+@media screen and (max-width: 992px) {
+  .gallery__container {
+    flex-direction: column;
+  }
+
+  .gallery__content {
+    justify-content: initial;
+    margin-right: 0;
+    margin-bottom: 50px;
+    max-width: 280px;
+  }
+
+  .gallery__notice_upper {
+    display: none;
+  }
+
+  .gallery__swiper-navigation {
+    margin-top: 0;
+  }
+
+  .gallery__swiper {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .gallery__swiper .swiper-wrapper {
+		height: 668px;
+	}
+
+  .gallery__notice_lower {
+    display: block;
+  }
+}

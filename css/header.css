@@ -211,23 +211,23 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.artstyle-sub-list__container {
-	padding: 40px;
-	background-color: rgba(0, 0, 0, 0.4);
-}
-
-.artstyle-sub-list {
+.artstyle__container {
 	position: absolute;
 	left: -4px;
 	top: 47px;
-	width: 300px;
-	max-height: 300px;
+	padding: 40px;
+	background-color: rgba(0, 0, 0, 0.4);
 	visibility: hidden;
 	opacity: 0;
 	transition-property: opacity, visibility;
 	transition-duration: .3s, 0s;
 	transition-delay: 0s, .3s;
 	z-index: -1;
+}
+
+.artstyle-sub-list {
+	width: 220px;
+	max-height: 220px;
 }
 
 .active-sub-list {
@@ -271,83 +271,83 @@
 }
 
 .artstyle-sub-list__item_tintoretto {
-	background-image: url('../img/header_sub_list_tintoretto.png');
+	background-image: url('../img/header/header_sub_list_tintoretto.png');
 }
 
 .artstyle-sub-list__item_frederick {
-	background-image: url('../img/header_sub_list_frederick.png');
+	background-image: url('../img/header/header_sub_list_frederick.png');
 }
 
 .artstyle-sub-list__item_leonardo {
-	background-image: url('../img/header_sub_list_leonardo.png');
+	background-image: url('../img/header/header_sub_list_leonardo.png');
 }
 
 .artstyle-sub-list__item_verrocchio {
-	background-image: url('../img/header_sub_list_verrocchio.png');
+	background-image: url('../img/header/header_sub_list_verrocchio.png');
 }
 
 .artstyle-sub-list__item_monet {
-	background-image: url('../img/header_sub_list_monet.png');
+	background-image: url('../img/header/header_sub_list_monet.png');
 }
 
 .artstyle-sub-list__item_sisley {
-	background-image: url('../img/header_sub_list_sisley.png');
+	background-image: url('../img/header/header_sub_list_sisley.png');
 }
 
 .artstyle-sub-list__item_manet {
-	background-image: url('../img/header_sub_list_manet.png');
+	background-image: url('../img/header/header_sub_list_manet.png');
 }
 
 .artstyle-sub-list__item_renoir {
-	background-image: url('../img/header_sub_list_renoir.png');
+	background-image: url('../img/header/header_sub_list_renoir.png');
 }
 
 .artstyle-sub-list__item_van-gogh {
-	background-image: url('../img/header_sub_list_van-gogh.png');
+	background-image: url('../img/header/header_sub_list_van-gogh.png');
 }
 
 .artstyle-sub-list__item_cezanne {
-	background-image: url('../img/header_sub_list_cezanne.png');
+	background-image: url('../img/header/header_sub_list_cezanne.png');
 }
 
 .artstyle-sub-list__item_gauguin {
-	background-image: url('../img/header_sub_list_gaugin.png');
+	background-image: url('../img/header/header_sub_list_gaugin.png');
 }
 
 .artstyle-sub-list__item_seurat {
-	background-image: url('../img/header_sub_list_seurat.png');
+	background-image: url('../img/header/header_sub_list_seurat.png');
 }
 
 .artstyle-sub-list__item_kandinsky {
-	background-image: url('../img/header_sub_list_kandinsky.png');
+	background-image: url('../img/header/header_sub_list_kandinsky.png');
 }
 
 .artstyle-sub-list__item_marinetti {
-	background-image: url('../img/header_sub_list_marinetti.png');
+	background-image: url('../img/header/header_sub_list_marinetti.png');
 }
 
 .artstyle-sub-list__item_malevich {
-	background-image: url('../img/header_sub_list_malevich.png');
+	background-image: url('../img/header/header_sub_list_malevich.png');
 }
 
 .artstyle-sub-list__item_picasso {
-	background-image: url('../img/header_sub_list_picasso.png');
+	background-image: url('../img/header/header_sub_list_picasso.png');
 }
 
 .artstyle-sub-list__item_carra {
-	background-image: url('../img/header_sub_list_carra.png');
+	background-image: url('../img/header/header_sub_list_carra.png');
 }
 
 .artstyle-sub-list__item_pratella {
-	background-image: url('../img/header_sub_list_pratella.png');
+	background-image: url('../img/header/header_sub_list_pratella.png');
 }
 
 .artstyle-sub-list__item_severini {
-	background-image: url('../img/header_sub_list_severini.png');
+	background-image: url('../img/header/header_sub_list_severini.png');
 }
 
 .artstyle-sub-list__item_balla {
-	background-image: url('../img/header_sub_list_balla.png');
+	background-image: url('../img/header/header_sub_list_balla.png');
 }
 
 .artstyle-sub-list__link {
@@ -356,8 +356,7 @@
 }
 
 .simplebar-track.simplebar-vertical {
-	top: 40px;
-	right: 20px;
+	right: -20px;
 	width: 2px;
 }
 
@@ -380,7 +379,7 @@
 	left: 0;
 	width: 22.5px;
 	height: 22.5px;
-	background: url('../img/search_icon.svg') center / cover no-repeat transparent;
+	background: url('../img/header/search_icon.svg') center / cover no-repeat transparent;
 }
 
 .search-box__input {
