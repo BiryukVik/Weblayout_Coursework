@@ -38,7 +38,7 @@ var swiper2 = new Swiper('.gallery__swiper', {
       spaceBetween: 34
     },
 
-    1199.99: {
+    1549.99: {
       slidesPerColumn: 2,
       slidesPerView: 3,
       slidesPerGroup: 3,

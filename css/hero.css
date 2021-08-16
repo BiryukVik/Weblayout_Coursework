@@ -42,14 +42,15 @@
 
 .hero__content {
   position: relative;
-  padding-top: 233px;
+  padding-top: 242px;
   padding-bottom: 142px;
   max-width: 600px;
   z-index: 5;
+  transform: translate(1px, 0);
 }
 
 .hero__heading {
-  margin-bottom: 20px;
+  margin-bottom: 19px;
   font-weight: 700;
   font-size: 72px;
   line-height: 83px;
@@ -57,7 +58,7 @@
 }
 
 .hero__description {
-  margin-bottom: 112px;
+  margin-bottom: 115px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -66,7 +67,7 @@
 
 .hero__subscribe {
   box-sizing: border-box;
-  padding: 22px 35px;
+  padding: 20px 33px;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;

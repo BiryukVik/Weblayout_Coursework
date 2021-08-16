@@ -1,5 +1,9 @@
+.about {
+  margin-bottom: 70px;
+}
+
 .about__heading {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   color: var(--dark-gray);
 }
 

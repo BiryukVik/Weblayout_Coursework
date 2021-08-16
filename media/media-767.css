@@ -2,8 +2,8 @@
 
 @media screen and (max-width: 767px) {
   .header__container-upper {
-		padding-top: 12px;
-		padding-bottom: 12px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.header-burger {
@@ -106,28 +106,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 75px;
+    justify-content: center;
+    padding-top: 79px;
     padding-bottom: 45px;
     max-width: 285px;
   }
 
   .hero__heading {
-    margin-bottom: 5px;
+    margin-bottom: 14px;
     font-size: 32px;
-    line-height: 44px;
+    line-height: 36px;
     text-align: center;
+    transform: translate(3px, 0);
   }
 
   .hero__description {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    max-width: 265px;
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
     text-align: center;
+    transform: translate(2px, 0);
   }
 
   .hero__subscribe {
-    padding: 14px 18px;
+    padding: 9px 17px;
     font-size: 12px;
     line-height: 16px;
   }
@@ -136,8 +140,12 @@
 /* ABOUT */
 
 @media screen and (max-width: 767px) {
+  .about {
+    margin-bottom: 40px;
+  }
+
   .about__heading {
-    margin-bottom: 15px;
+    margin-bottom: 13px;
     font-size: 28px;
     line-height: 38px;
   }
@@ -148,16 +156,16 @@
   }
 }
 
-/* HERO */
+/* GALLERY */
 
 @media screen and (max-width: 767px) {
   .gallery__container {
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 52px;
   }
 
   .gallery__heading {
-    margin-bottom: 20px;
+    margin-bottom: 13px;
     font-weight: 400;
     font-size: 28px;
     line-height: 38px;
@@ -168,6 +176,10 @@
     max-width: 100%;
   }
 
+  .gallery-select-container__title {
+    margin-bottom: 5px;
+  }
+
   .gallery__swiper {
     display: flex;
     flex-direction: column-reverse;
@@ -175,12 +187,12 @@
   }
 
   .gallery__swiper-navigation {
-    margin-top: 20px;
+    margin-top: 18px;
     margin-bottom: 0;
   }
 
   .gallery__swiper {
-    margin-bottom: 20px;
+    margin-bottom: 6px;
   }
 
   .gallery__swiper .swiper-wrapper {
@@ -189,5 +201,33 @@
 
   .gallery .swiper-slide {
 		height: 367px;
+	}
+
+  .gallery .swiper-slide:hover::before {
+		top: 25px;
+		left: 20px;
+		width: 250px;
+		height: 317px;
+	}
+	
+	.gallery .swiper-slide:hover::after {
+		top: 135px;
+		left: 100px;
+	}
+
+  .gallery .swiper-slide:active::before {
+		top: 0;
+		left: 0;
+    width: 250px;
+		height: 317px;
+		border-top-width: 25px;
+    border-bottom-width: 25px;
+    border-left-width: 20px;
+    border-right-width: 20px;
+	}
+	
+	.gallery .swiper-slide:active::after {
+		top: 135px;
+		left: 100px;
 	}
 }

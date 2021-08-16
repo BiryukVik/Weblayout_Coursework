@@ -14,8 +14,8 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 28px;
+	padding-bottom: 28px;
 }
 
 .header-burger {
@@ -25,6 +25,7 @@
 .header__logo {
 	flex: 0 0 173px;
 	margin-right: 11%;
+	transform: translate(1px, 2px);
 }
 
 .header__logo:focus {
@@ -93,6 +94,10 @@
 	transition: fill .3s ease-in-out;
 }
 
+.header__login svg {
+	margin-right: 4px;
+}
+
 .header__login svg path {
 	transition: fill .3s ease-in-out;
 }
@@ -146,7 +151,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
-	width: 66%;
+	width: 65.5%;
 }
 
 .artstyle-list .artstyle-sub-list {
@@ -160,6 +165,10 @@
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
+}
+
+.artstyle-list__link svg {
+	margin-left: -2px;
 }
 
 .artstyle-list__link {
@@ -201,7 +210,7 @@
 	transition: color 0.3s ease-in-out;
 }
 
-.active-art-list-item svg{
+.active-art-list-item svg {
 	transform: rotate(180deg);
 	transition: all 0.3s ease-in-out;
 }
@@ -372,19 +381,22 @@
 
 .header-lower__form {
 	position: relative;
+	transform: translate(-1px, 1px);
 }
 
 .search-box__icon {
 	position: absolute;
-	left: 0;
+	top: 4px;
+	left: -4px;
 	width: 22.5px;
 	height: 22.5px;
 	background: url('../img/header/search_icon.svg') center / cover no-repeat transparent;
 }
 
 .search-box__input {
+	display: inline-block;
 	margin-left: 30px;
-	max-width: 218px;
+	width: 218px;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
@@ -411,6 +423,7 @@
 	font-size: 18px;
 	line-height: 24px;
 	color: #fff;
+	transform: translate(-2px, 0);
 }
 
 .search-box__input::-moz-placeholder {
