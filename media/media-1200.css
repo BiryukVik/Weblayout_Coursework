@@ -112,7 +112,9 @@
 		top: 0;
 		left: -100%;
 		flex-direction: column;
+		justify-content: space-between;
 		width: 100%;
+		height: 768px;
 		padding-top: 96px;
 		padding-left: 48px;
 		padding-bottom: 51px;
@@ -124,7 +126,6 @@
 	.header-menu {
 		flex-direction: column;
 		align-items: flex-start;
-		margin-bottom: 60px;
 	}
 
 	.header-menu__item {
@@ -138,6 +139,7 @@
 	}
 
 	.header__login {
+		align-self: flex-start;
 		font-weight: 600;
 		padding: 20px 90px;
 		border: 2px solid var(--purple);
@@ -168,7 +170,7 @@
 }
 
 	.header__burger-menu.active {
-		display: block;
+		display: flex;
 		left: 0;
 		transition: all .3s ease-in-out;
 	}

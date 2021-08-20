@@ -40,6 +40,30 @@
 		width: 27px;
 	}
 
+  .header__burger-menu {
+		height: 355px;
+		padding-top: 50px;
+		padding-left: 15px;
+		padding-bottom: 25px;
+	}
+
+  .header-menu__item {
+		font-size: 16px;
+		line-height: 32px;
+	}
+
+  .header__login {
+		padding: 7px 31px;
+    font-size: 12px;
+    line-height: auto;
+	}
+
+  .header__login svg {
+    margin-right: 2px;
+    width: 9px;
+    height: 9px;
+  }
+
 	.header__logo {
 		flex: 0 0 97px;
 	}

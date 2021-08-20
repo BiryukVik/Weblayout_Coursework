@@ -55,7 +55,7 @@
   }
 }
 
-/* HERO */
+/* GALLERY */
 
 @media screen and (max-width: 992px) {
   .gallery__container {
@@ -68,6 +68,14 @@
     margin-right: 0;
     margin-bottom: 50px;
     max-width: 280px;
+  }
+
+  .choices {
+    z-index: 10;
+  }
+
+  .choices__list--dropdown {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   .gallery__notice_upper {
