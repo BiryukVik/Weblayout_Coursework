@@ -1,0 +1,189 @@
+.catalog__nav {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.catalog__heading {
+  margin-right: 39px;
+}
+
+.catalog__button-list {
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.catalog__button-list-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.catalog__button {
+  width: 46px;
+  height: 46px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.catalog__button_france {
+  background-image: url('../img/catalog/catalog_france.png');
+}
+
+.catalog__button_germany {
+  background-image: url('../img/catalog/catalog_germany.png');
+}
+
+.catalog__button_italy {
+  background-image: url('../img/catalog/catalog_italy.png');
+}
+
+.catalog__button_russia {
+  background-image: url('../img/catalog/catalog_russia.png');
+}
+
+.catalog__button_belgium {
+  background-image: url('../img/catalog/catalog_belgium.png');
+}
+
+.catalog__description {
+  margin-bottom: 50px;
+  max-width: 1080px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--dark-gray);
+}
+
+.catalog__lower {
+  display: flex;
+  justify-content: space-between;
+}
+
+.artist-list__not-available {
+  display: none;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 610px;
+  background: url('../img/catalog/catalog_na.png') top / contain no-repeat;
+}
+
+.not-available__heading  {
+  margin-bottom: 15px;
+}
+
+.not-available__description {
+  margin-bottom: 15px;
+}
+
+.not-available__link {
+  color: var(--purple);
+}
+
+.catalog__lower-left {
+  max-width: 46.8%;
+}
+
+.catalog-artist__img {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.catalog__smaller-heading {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--dark-gray);
+}
+
+.catalog-artist__name {
+  margin-bottom: 15px;
+}
+
+.catalog-artist__age {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--light-gray);
+}
+
+.catalog__smaller-description {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: var(--dark-gray);
+}
+
+.catalog__time-table {
+  max-width: 45%;
+}
+
+.time-table__content.active .time-table__list {
+  display: block;
+}
+
+.time-table__content.active .time-table__not-available {
+  display: flex;
+}
+
+.time-table__period {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -1px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.time-table__period_first {
+  border-top: 1px solid var(--light-gray);
+}
+
+.time-table__list {
+  display: none;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  height: 288px;
+  columns: auto 3;
+  column-fill: auto;
+  column-gap: 60px;
+}
+
+.time-table__list-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--dark-gray);
+}
+
+.time-table__not-available {
+  display: none;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.not-available__img {
+  margin-right: 24px;
+  width: 275px;
+  height: 189px;
+  background-color: var(--not-available-gray);
+  outline: 12px solid #fff;
+  outline-offset: -14px;
+}
+
+.not-available__heading {
+  margin-bottom: 5px;
+}
+
+.not-available__description-list {
+  margin-bottom: 5px;
+  max-width: 275px;
+  line-height: 21px;
+}
+

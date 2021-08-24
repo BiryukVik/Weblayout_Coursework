@@ -57,6 +57,7 @@ html {
   --dark-gray: #333;
   --gray: #666;
   --light-gray: #999;
+  --not-available-gray: #b7b7b7;
   --border-gray: #cacaca;
   --catalog-button-gray: #ececec;
 }

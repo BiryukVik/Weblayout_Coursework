@@ -17,8 +17,8 @@ var swiper2 = new Swiper('.gallery__swiper', {
   direction: 'horizontal',
   slidesPerColumn: 1,
   slidesPerView: 1,
-  slidesPerGroup: 1,
   slidesPerColumnFill: 'row',
+  spaceBetween: 34,
 
   pagination: {
     el: '.gallery__pagination',
@@ -31,19 +31,29 @@ var swiper2 = new Swiper('.gallery__swiper', {
   },
 
   breakpoints: {
+    320: {
+      slidesPerColumn: 1,
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+
+    500: {
+      slidesPerColumn: 1,
+      slidesPerView: 2,
+      spaceBetween: 34,
+    },
+
     767.99: {
       slidesPerColumn: 2,
       slidesPerView: 2,
-      slidesPerGroup: 2,
       spaceBetween: 34,
     },
 
     1549.99: {
       slidesPerColumn: 2,
       slidesPerView: 3,
-      slidesPerGroup: 3,
       spaceBetween: 50,
-    }
+    },
   },
 
   debugger: true,
