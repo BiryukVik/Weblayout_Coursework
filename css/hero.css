@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  height: 800px;
+  overflow: hidden;
 }
 
 .hero__swiper {
@@ -12,20 +12,24 @@
   z-index: -1;
 }
 
-.swiper-slider {
-  transform: scale(1.1);
-  transition: transform 6s ease-out;
+.hero__swiper-wrapper {
+  animation: swiper-animation 8500ms ease-in-out infinite alternate;
 }
 
-.swiper-slide-duplicate-active {
-  transform: scale(1);
+@keyframes swiper-animation {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.05);
+  }
 }
 
 .hero__swiper-slide {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  transition-duration: 1s !important;
 }
 
 .hero__swiper-slide_1 {
@@ -66,6 +70,7 @@
 }
 
 .hero__subscribe {
+  position: relative;
   box-sizing: border-box;
   padding: 20px 33px;
   font-weight: 700;
@@ -75,24 +80,6 @@
   background-color: var(--purple);
   border: 3px solid transparent;
   border-radius: 100px;
-  transition: border .3s ease-in-out;
-  transition: background-color .3s ease-in-out;
-}
-
-.hero__subscribe:focus:not(:active),
-.hero__subscribe:focus:not(:hover) {
-  border: 3px solid #fff;
-  box-shadow: 0 0 0 2px var(--lavender);
-}
-
-.hero__subscribe:hover {
-  border: 3px solid var(--light-purple);
-  transition: border .3s ease-in-out;
-}
-
-.hero__subscribe:active {
-  background-color: var(--dark-purple);
-  border: 3px solid var(--light-purple);
   transition: border .3s ease-in-out;
   transition: background-color .3s ease-in-out;
 }

@@ -8,7 +8,7 @@ $(document).ready(function() {
 
 // HEADER SUB MENU
 
-document.querySelectorAll(".artstyle-list__link").forEach(item => {
+document.querySelectorAll(".artstyle-list__button").forEach(item => {
   item.addEventListener("click", function() {
     let listOpen = this.parentElement.querySelector(".artstyle__container");
     this.classList.toggle("active-art-list-item");

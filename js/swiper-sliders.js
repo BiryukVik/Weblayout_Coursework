@@ -1,11 +1,12 @@
 // HERO
 
-var swiper1 = new Swiper('.hero__swiper', {
+const swiper1 = new Swiper('.hero__swiper', {
   direction: 'horizontal',
   loop: true,
   effect: 'fade',
+  speed: 2000,
   autoplay: {
-    delay: 6000,
+    delay: 6500,
   },
 
   debugger: true,
@@ -13,7 +14,7 @@ var swiper1 = new Swiper('.hero__swiper', {
 
 // GALLERY
 
-var swiper2 = new Swiper('.gallery__swiper', {
+const swiper2 = new Swiper('.gallery__swiper', {
   direction: 'horizontal',
   slidesPerColumn: 1,
   slidesPerView: 1,
