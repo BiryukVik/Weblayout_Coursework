@@ -267,3 +267,46 @@
 		left: 100px;
 	}
 }
+
+/* CATALOG */
+
+@media screen and (max-width: 1200px) {
+	.catalog__description {
+		max-width: 100%;
+	}
+	
+	.catalog__lower-left {
+		width: 47.3%;
+	}
+	
+	.catalog__time-table {
+		width: 47.3%;
+	}
+
+	.time-table__heading {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 32px;
+	}
+	
+	.time-table__list {
+		height: 384px;
+		columns: auto 2;
+		column-gap: 45px;
+	}
+
+	.time-table__list-item {
+		text-align: left;
+	}
+
+	.not-available__img {
+		width: 189px;
+		height: 130px;
+		outline: 8px solid #fff;
+		outline-offset: -10px;
+	}
+
+	.not-available__description-list {
+		max-width: 207px;
+	}
+}

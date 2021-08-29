@@ -19,6 +19,7 @@
 }
 
 .catalog__button {
+  position: relative;
   width: 46px;
   height: 46px;
   border: 2px solid transparent;
@@ -58,7 +59,7 @@
 }
 
 .catalog__lower {
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 100%;
 }
@@ -67,7 +68,11 @@
   width: 46.8%;
 }
 
-.artist-list__not-available {
+.catalog__lower_other .artist-list__not-available {
+  display: block;
+}
+
+.catalog__lower_russia .artist-list__not-available {
   display: none;
   flex-direction: column;
   justify-content: flex-end;
@@ -95,8 +100,11 @@
   color: var(--purple);
 }
 
-.catalog-artist__img {
+.catalog-artist__img-container {
   margin-bottom: 30px;
+}
+
+.catalog-artist__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -147,6 +155,7 @@
   margin-top: -1px;
   padding-top: 32px;
   padding-bottom: 32px;
+  font-family: 'Open Sans', sans-serif;
   border-top: 1px solid transparent;
   border-bottom: 1px solid var(--light-gray);
   cursor: pointer;
@@ -157,7 +166,12 @@
   border-top: 1px solid var(--light-gray);
 }
 
+.time-table__button {
+  position: relative;
+}
+
 .time-table__heading {
+  font-family: 'Open Sans', sans-serif;
   transition: color .3s ease-in-out;
 }
 
@@ -175,28 +189,27 @@
 .time-table__icon::before {
   content: '';
   position: absolute;
-  top: 17px;
-  left: 17px;
-  width: 12px;
-  height: 12px;
+  top: 16px;
+  left: 16.2px;
+  width: 13px;
+  height: 13px;
   background: url('../img/catalog/catalog_arrow_down.svg') center / cover no-repeat transparent;
   transition: transform .3s ease-in-out;
 }
 
 .time-table__list {
   display: none;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding: 25px 0;
   height: 288px;
   columns: auto 3;
   column-fill: auto;
   column-gap: 60px;
   border-bottom: 1px solid var(--light-gray);
-  transform: translate(0, -30px);
-  transition: transform .3s ease-in-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .time-table__list-item {
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
@@ -206,11 +219,7 @@
 .time-table__not-available {
   display: none;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 25px;
-}
-
-.time-table__not-available {
+  padding: 25px 0;
   border-bottom: 1px solid var(--light-gray);
 }
 
@@ -229,11 +238,13 @@
 
 .not-available__heading {
   margin-bottom: 5px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .not-available__description-list {
   margin-bottom: 5px;
   max-width: 275px;
+  font-family: 'Open Sans', sans-serif;
   line-height: 21px;
 }
 

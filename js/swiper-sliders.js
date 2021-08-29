@@ -16,8 +16,11 @@ const swiper1 = new Swiper('.hero__swiper', {
 
 const swiper2 = new Swiper('.gallery__swiper', {
   direction: 'horizontal',
-  slidesPerColumn: 1,
+  grid: {
+    rows: 2
+  },
   slidesPerView: 1,
+  slidesPerGroup: 3,
   slidesPerColumnFill: 'row',
   spaceBetween: 34,
 
@@ -33,26 +36,38 @@ const swiper2 = new Swiper('.gallery__swiper', {
 
   breakpoints: {
     320: {
-      slidesPerColumn: 1,
+      grid: {
+        rows: 1
+      },
       slidesPerView: 1,
+      slidesPerGroup: 1,
       spaceBetween: 0,
     },
 
     500: {
-      slidesPerColumn: 1,
+      grid: {
+        rows: 2
+      },
+      slidesPerGroup: 2,
       slidesPerView: 2,
       spaceBetween: 34,
     },
 
-    767.99: {
-      slidesPerColumn: 2,
+    767: {
+      grid: {
+        rows: 2
+      },
       slidesPerView: 2,
+      slidesPerGroup: 2,
       spaceBetween: 34,
     },
 
     1549.99: {
-      slidesPerColumn: 2,
+      grid: {
+        rows: 2
+      },
       slidesPerView: 3,
+      slidesPerGroup: 3,
       spaceBetween: 50,
     },
   },

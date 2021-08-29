@@ -223,6 +223,66 @@
   transition: all .3s ease-in-out;
 }
 
+.gallery .swiper-slide::before {
+  transition: background-color .3s ease-in-out;
+}
+
+.gallery .swiper-slide::after {
+  transition: background-image .3s ease-in-out;
+}
+
+.gallery .swiper-slide .gallery__swiper-link:focus:not(:active),
+.gallery .swiper-slide .gallery__swiper-link:focus:not(:hover) {
+  outline: 3px solid var(--dark-purple);
+  outline-offset: -3px;
+}
+
+.gallery .swiper-slide:hover::before {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: background-color .3s ease-in-out;
+}
+
+.gallery .swiper-slide:hover::after {
+  content: '';
+  position: absolute;
+  top: 127px;
+  left: 135px;
+  width: 81px;
+  height: 79px;
+  background-image: url('../img/gallery/gallery_enlarge.svg');
+  transition: background-image .3s ease-in-out;
+}
+
+.gallery .swiper-slide:active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 25px solid rgba(194, 131, 243, 0.4);
+  transition: background-color .3s ease-in-out;
+}
+
+.gallery .swiper-slide:active::after {
+  content: '';
+  position: absolute;
+  top: 127px;
+  left: 135px;
+  width: 81px;
+  height: 79px;
+  background-image: url('../img/gallery/gallery_enlarge.svg');
+  transition: background-image .3s ease-in-out;
+}
+
+
 /* ----------- CATALOG ----------- */
 
 .catalog__button:focus:not(:active),
@@ -239,13 +299,63 @@
 	filter: none;
 }
 
+.catalog__button.active::before {
+	content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  bottom: -10px;
+  right: -10px;
+  border: 2px solid var(--dark-purple);
+	border-radius: 50%;
+}
+
+.time-table__period:focus:not(:active) .time-table__button,
+.time-table__period:focus:not(:hover) .time-table__button {
+	color: #fff;
+  background: var(--purple);
+	transition: none;
+}
+
+.time-table__period:focus:not(:active) .time-table__button::before,
+.time-table__period:focus:not(:hover) .time-table__button::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  bottom: -5px;
+  right: -5px;
+	border: 6px solid var(--purple);
+	transition: none;
+}
+
+.time-table__period:focus:not(:active) .time-table__icon,
+.time-table__period:focus:not(:hover) .time-table__icon {
+	background-color: var(--light-purple);
+}
+
+.time-table__period:hover {
+	border-top: 1px solid var(--purple);
+	border-bottom: 1px solid var(--purple);
+	transition: border .3s ease-in-out;
+}
+
+.time-table__period:hover .time-table__button {
+	color: var(--purple);
+}
+
+.time-table__period:hover .time-table__icon {
+	background-color: var(--light-purple);
+	transition: background-color .3s ease-in-out;
+}
+
 .time-table__content.active .time-table__period {
 	border-top: 1px solid var(--dark-purple);
 	border-bottom: 1px solid var(--dark-purple);
 	transition: border .3s ease-in-out;
 }
 
-.time-table__content.active .time-table__period .time-table__heading {
+.time-table__content.active .time-table__period .time-table__button {
 	color: var(--dark-purple);
 	transition: color .3s ease-in-out;
 }
@@ -258,11 +368,15 @@
 }
 
 .time-table__content.active .time-table__period .time-table__icon::before {
+	top: 17px;
+	left: 16.4px;
 	transform: rotate(180deg);
 	transition: transform .3s ease-in-out;
 }
 
-.time-table__content.active .time-table__list {
-	transform: translate(0, 0);
-  transition: transform .3s ease-in-out;
+@media screen and (max-width: 767px) {
+	.time-table__content.active .time-table__period .time-table__icon::before {
+		top: 10px;
+		left: 9.5px;
+	}
 }

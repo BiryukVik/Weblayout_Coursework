@@ -129,3 +129,41 @@
     display: block;
   }
 }
+
+/* CATALOG */
+
+@media screen and (max-width: 992px) {
+  .catalog__description {
+    margin-bottom: 30px;
+  }
+  
+  .catalog__lower {
+    flex-direction: column-reverse;
+  }
+
+  .catalog__lower-left {
+    width: 100%;
+  }
+
+  .catalog__time-table {
+    margin-bottom: 50px;
+    width: 100%;
+  }
+
+  .time-table__list {
+    height: 290px;
+    columns: auto 3;
+    column-gap: 40px;
+  }
+
+  .not-available__img {
+    width: 275px;
+    height: 189px;
+    outline: 12px solid #fff;
+    outline-offset: -14px;
+  }
+
+  .not-available__description-list {
+    max-width: 275px;
+  }
+}
