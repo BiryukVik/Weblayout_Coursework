@@ -310,73 +310,86 @@
 	border-radius: 50%;
 }
 
-.time-table__period:focus:not(:active) .time-table__button,
-.time-table__period:focus:not(:hover) .time-table__button {
-	color: #fff;
-  background: var(--purple);
-	transition: none;
+.ui-state-focus:not(:hover) .button,
+.ui-state-focus:not(:active) .button {
+	background-color: var(--purple);
 }
 
-.time-table__period:focus:not(:active) .time-table__button::before,
-.time-table__period:focus:not(:hover) .time-table__button::before {
+.ui-state-focus:not(:hover) .button::before,
+.ui-state-focus:not(:active) .button::before {
   content: '';
   position: absolute;
-  top: -5px;
-  left: -5px;
-  bottom: -5px;
-  right: -5px;
-	border: 6px solid var(--purple);
-	transition: none;
+  top: -1px;
+  left: -1px;
+  bottom: -1px;
+  right: -1px;
+  border: 2px solid var(--purple);
 }
 
-.time-table__period:focus:not(:active) .time-table__icon,
-.time-table__period:focus:not(:hover) .time-table__icon {
+.ui-state-focus:not(:hover) .button h3,
+.ui-state-focus:not(:active) .button h3 {
+	color: #fff;
+}
+
+.ui-state-focus:not(:hover) span,
+.ui-state-focus:not(:active) span {
 	background-color: var(--light-purple);
 }
 
-.time-table__period:hover {
-	border-top: 1px solid var(--purple);
-	border-bottom: 1px solid var(--purple);
-	transition: border .3s ease-in-out;
+.ui-state-hover {
+	border-color: var(--purple);
 }
 
-.time-table__period:hover .time-table__button {
+.ui-state-hover .button h3 {
 	color: var(--purple);
 }
 
-.time-table__period:hover .time-table__icon {
+.ui-state-hover span {
 	background-color: var(--light-purple);
-	transition: background-color .3s ease-in-out;
 }
 
-.time-table__content.active .time-table__period {
-	border-top: 1px solid var(--dark-purple);
-	border-bottom: 1px solid var(--dark-purple);
-	transition: border .3s ease-in-out;
+.ui-state-active {
+	border-color: var(--dark-purple);
 }
 
-.time-table__content.active .time-table__period .time-table__button {
+.ui-state-active .button h3 {
 	color: var(--dark-purple);
-	transition: color .3s ease-in-out;
 }
 
-.time-table__content.active .time-table__period .time-table__icon {
+.ui-state-active span {
 	border: 2px solid var(--dark-purple);
 	background-color: var(--light-purple);
-	transition: border .3s ease-in-out;
-	transition: background-color .3s ease-in-out;
 }
 
-.time-table__content.active .time-table__period .time-table__icon::before {
+.ui-state-active span::before {
 	top: 17px;
 	left: 16.4px;
 	transform: rotate(180deg);
-	transition: transform .3s ease-in-out;
 }
 
 @media screen and (max-width: 767px) {
-	.time-table__content.active .time-table__period .time-table__icon::before {
+	.ui-state-active span::before {
 		top: 10px;
 		left: 9.5px;
 	}
+}
+
+.time-table__list-button:focus:not(:active),
+.time-table__list-button:focus:not(:hover) {
+	background-color: var(--purple);
+}
+
+.time-table__list-button:focus:not(:active)::before,
+.time-table__list-button:focus:not(:hover)::before {
+  display: none;
+}
+
+.time-table__list-button:hover {
+	color: var(--purple);
+	border-bottom: 1px solid var(--purple);
+}
+
+.time-table__list-button:active {
+	color: var(--dark-purple);
+	border-bottom: none;
 }

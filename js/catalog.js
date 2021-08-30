@@ -1,12 +1,11 @@
 // ACCORDION
 
-const accordion = document.getElementsByClassName ('time-table__content');
-
-for (i = 0; i<accordion.length; i++){
-  accordion[i].addEventListener('click', function(){
-    this.classList.toggle('active')
-  })
-}
+$( function() {
+  $( ".time-table__content" ).accordion({
+    active: false,
+    collapsible: true
+  });
+} );
 
 // TABS LANGUAGE/COUNTRY
 
@@ -15,7 +14,7 @@ function openCity(evt, cityName) {
   var i, tabcontent, tablinks;
 
   // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("catalog__lower");
+  tabcontent = document.getElementsByClassName("catalog__tab_big");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
@@ -33,3 +32,21 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// TABS ARTISTS
+
+document.addEventListener('DOMContentLoaded', function(){
+  document.querySelectorAll('.time-table__list-button').forEach(function(tabsBtn) {
+    tabsBtn.addEventListener('click', function(event) {
+      const path = event.currentTarget.dataset.path
+
+      document.querySelectorAll('.time-table__list-button').forEach((e) => e.classList.remove('time-table__list-button_active'))
+
+      document.querySelectorAll('.catalog-artist').forEach(function(tabContent) {
+        tabContent.classList.remove('catalog-artist_active')
+      })
+      document.querySelector(`[data-target="${path}"]`).classList.add('catalog-artist_active')
+      event.target.classList.add('time-table__list-button_active');
+    })
+  })
+})

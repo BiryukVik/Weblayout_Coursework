@@ -291,8 +291,6 @@
 	
 	.time-table__list {
 		height: 384px;
-		columns: auto 2;
-		column-gap: 45px;
 	}
 
 	.time-table__list-item {

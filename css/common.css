@@ -48,6 +48,12 @@ html {
   font-family: 'Open Sans', sans-serif;
 }
 
+input, 
+textarea, 
+button {
+  font-family: inherit;
+}
+
 :root {
   --dark-purple: #7943a4;
   --purple: #9d5cd0;

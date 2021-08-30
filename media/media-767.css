@@ -300,7 +300,7 @@
     line-height: 32px;
   }
 
-  .time-table__period {
+  .ui-accordion .ui-accordion-header {
     padding-top: 20px;
     padding-bottom: 20px;
   }
@@ -326,11 +326,9 @@
   }
 
   .time-table__list {
+    flex-wrap: nowrap;
     padding: 20px 0;
-    height: 670px;
-    columns: initial;
-    column-fill: auto;
-    column-gap: 0;
+    height: 675px;
   }
 
   .not-available__img {

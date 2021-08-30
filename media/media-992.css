@@ -94,7 +94,7 @@
   }
 
   .gallery__swiper .swiper-wrapper {
-		height: 592px;
+		height: 600px;
 	}
 
   .gallery .swiper-slide:hover::before {
@@ -152,8 +152,6 @@
 
   .time-table__list {
     height: 290px;
-    columns: auto 3;
-    column-gap: 40px;
   }
 
   .not-available__img {
