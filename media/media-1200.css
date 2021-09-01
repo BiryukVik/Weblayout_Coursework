@@ -271,6 +271,18 @@
 /* CATALOG */
 
 @media screen and (max-width: 1200px) {
+	.catalog__nav {
+		margin-bottom: 14px;
+	}
+
+	.catalog__heading {
+		margin-right: 41px;
+	}
+
+	.catalog__button-list {
+		padding-top: 16px;
+	}
+
 	.catalog__description {
 		max-width: 100%;
 	}
@@ -290,7 +302,9 @@
 	}
 	
 	.time-table__list {
-		height: 384px;
+		height: 435px;
+		columns: auto 2;
+		column-gap: 40px;
 	}
 
 	.time-table__list-item {

@@ -44,16 +44,7 @@ const swiper2 = new Swiper('.gallery__swiper', {
       spaceBetween: 0,
     },
 
-    500: {
-      grid: {
-        rows: 2
-      },
-      slidesPerGroup: 2,
-      slidesPerView: 2,
-      spaceBetween: 34,
-    },
-
-    767: {
+    767.99: {
       grid: {
         rows: 2
       },

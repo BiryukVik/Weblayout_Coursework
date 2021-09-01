@@ -89,7 +89,7 @@
 
   .gallery__swiper {
     max-width: 100%;
-    margin-bottom: 17px;
+    margin-bottom: 7px;
     transform: translate(-1px, 0);
   }
 
@@ -133,8 +133,24 @@
 /* CATALOG */
 
 @media screen and (max-width: 992px) {
+  .catalog__nav {
+		margin-bottom: 16px;
+	}
+  
+  .catalog__button-list {
+		padding-top: 7px;
+	}
+
+  .catalog__heading {
+		margin-right: 39px;
+	}
+
+  .catalog__button-list-item:not(:last-child) {
+    margin-right: 50px;
+  }
+
   .catalog__description {
-    margin-bottom: 30px;
+    margin-bottom: 23px;
   }
   
   .catalog__lower {
@@ -151,7 +167,9 @@
   }
 
   .time-table__list {
-    height: 290px;
+    height: 340px;
+    columns: auto 3;
+    column-gap: 40px;
   }
 
   .not-available__img {

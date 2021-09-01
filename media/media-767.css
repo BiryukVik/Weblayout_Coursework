@@ -206,11 +206,11 @@
 
   .gallery__swiper {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
   }
 
   .gallery__swiper-navigation {
+    align-self: center;
+    order: 2;
     margin-top: 18px;
     margin-bottom: 0;
   }
@@ -263,19 +263,27 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-bottom: 18px;
   }
 
   .catalog__heading {
     margin-right: 0;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
   }
 
+  .catalog__button-list {
+		padding-top: 10px;
+	}
+
   .catalog__button-list-item:not(:last-child) {
-    margin-right: 32px;
+    margin-right: 28px;
   }
 
   .catalog__button {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
 
   .catalog__description {
@@ -295,9 +303,14 @@
   }
 
   .catalog-artist__name {
+    margin-bottom: 9px;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .catalog-artist__age {
+    margin-bottom: 6px;
   }
 
   .ui-accordion .ui-accordion-header {
@@ -325,10 +338,15 @@
     height: 7px;
   }
 
-  .time-table__list {
-    flex-wrap: nowrap;
+  .ui-accordion .ui-accordion-content {
     padding: 20px 0;
-    height: 675px;
+  }
+
+  .time-table__list {
+    /* flex-wrap: nowrap; */
+    height: 810px;
+    columns: auto 1;
+    column-gap: 0;
   }
 
   .not-available__img {
