@@ -46,7 +46,9 @@ document.addEventListener('DOMContentLoaded', function(){
         tabContent.classList.remove('catalog-artist_active')
       })
       document.querySelector(`[data-target="${path}"]`).classList.add('catalog-artist_active')
-      event.target.classList.add('time-table__list-button_active');
+      this.classList.add('time-table__list-button_active');
     })
   })
 })
+
+document.getElementsByClassName("time-table__default-open").click();

@@ -183,3 +183,23 @@
     max-width: 275px;
   }
 }
+
+/* EVENTS */
+
+@media screen and (max-width: 992px) {
+  .events-list__item:nth-child(-n+2) {
+    margin-bottom: 50px;
+  }
+
+  .events-list__item:nth-child(n+3) {
+    display: none;
+  }
+  
+  .events-list__item:nth-child(n+3).active {
+    display: block;
+  }
+
+  .events__article {
+		max-width: 317px;
+	}
+}

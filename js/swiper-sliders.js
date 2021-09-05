@@ -65,3 +65,17 @@ const swiper2 = new Swiper('.gallery__swiper', {
 
   debugger: true,
 });
+
+// EVENTS
+
+const swiper3 = new Swiper('.events__swiper', {
+  direction: 'horizontal',
+  centeredSlides: true,
+
+  pagination: {
+    el: '.events__pagination',
+    type: 'bullets',
+  },
+
+  debugger: true,
+});

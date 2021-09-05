@@ -79,9 +79,16 @@
 }
 
 .catalog__lower_russia .artist-list__not-available {
-  display: none;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.catalog-artist {
+  display: none;
+}
+
+.catalog-artist.catalog-artist_active {
+  display: block;
 }
 
 .catalog-artist__img-container {
