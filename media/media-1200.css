@@ -326,10 +326,6 @@
 /* EVENTS */
 
 @media screen and (max-width: 1200px) {
-	.events__article {
-		max-width: 290px;
-	}
-
 	.events__img-container {
 		max-height: 200px;
 	}

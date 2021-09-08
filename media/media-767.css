@@ -372,21 +372,32 @@
 /* EVENTS */
 
 @media screen and (max-width: 767px) {
-  .events-list {
-    display: none;
-  }
-
   .events__all-button {
     display: none;
   }
-  
-  .events__swiper {
-    display: block;
-  }
 
-  .events__swiper-wrapper {
+  /* .events__swiper-wrapper {
+    display: flex;
+    justify-content: initial;
+    flex-wrap: nowrap;
     margin-bottom: 20px;
   }
+
+  .events__swiper-slide {
+    width: 100%;
+  }
+
+  .events__swiper-slide:nth-child(-n+3) {
+    margin-bottom: 0;
+  }
+
+  .events__swiper-slide:nth-child(-n+2) {
+    margin-bottom: 0;
+  }
+  
+  .events__swiper-slide:nth-child(n+3) {
+    display: block;
+  } */
 
   .events__swiper>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
     width: 110px;

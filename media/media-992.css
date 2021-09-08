@@ -187,19 +187,23 @@
 /* EVENTS */
 
 @media screen and (max-width: 992px) {
-  .events-list__item:nth-child(-n+2) {
+  .events__swiper-slide {
+    width: 47.6%;
+  }
+
+  .events__swiper-slide:nth-child(-n+3) {
+    margin-bottom: 0;
+  }
+
+  .events__swiper-slide:nth-child(-n+2) {
     margin-bottom: 50px;
   }
 
-  .events-list__item:nth-child(n+3) {
+  .events__swiper-slide:nth-child(n+3) {
     display: none;
   }
   
-  .events-list__item:nth-child(n+3).active {
+  .events__swiper-slide:nth-child(n+3).active {
     display: block;
   }
-
-  .events__article {
-		max-width: 317px;
-	}
 }

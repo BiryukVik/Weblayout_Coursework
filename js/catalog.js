@@ -50,5 +50,3 @@ document.addEventListener('DOMContentLoaded', function(){
     })
   })
 })
-
-document.getElementsByClassName("time-table__default-open").click();

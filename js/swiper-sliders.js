@@ -68,14 +68,16 @@ const swiper2 = new Swiper('.gallery__swiper', {
 
 // EVENTS
 
-const swiper3 = new Swiper('.events__swiper', {
-  direction: 'horizontal',
-  centeredSlides: true,
-
-  pagination: {
-    el: '.events__pagination',
-    type: 'bullets',
-  },
-
-  debugger: true,
-});
+if (window.matchMedia('(max-width: 767px)').matches) {
+  const swiper3 = new Swiper('.events__swiper', {
+    direction: 'horizontal',
+    centeredSlides: true,
+  
+    pagination: {
+      el: '.events__pagination',
+      type: 'bullets',
+    },
+  
+    debugger: true,
+  });
+}
