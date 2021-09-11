@@ -71,11 +71,27 @@ const swiper2 = new Swiper('.gallery__swiper', {
 if (window.matchMedia('(max-width: 767px)').matches) {
   const swiper3 = new Swiper('.events__swiper', {
     direction: 'horizontal',
-    centeredSlides: true,
+    grid: {
+      rows: 1
+    },
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 0,
   
     pagination: {
       el: '.events__pagination',
       type: 'bullets',
+    },
+
+    breakpoints: {
+      576: {
+        grid: {
+          rows: 1
+        },
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 20,
+      },
     },
   
     debugger: true,

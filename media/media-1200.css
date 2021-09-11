@@ -326,16 +326,15 @@
 /* EVENTS */
 
 @media screen and (max-width: 1200px) {
+	.events__article {
+		padding: 250px 25px 50px 35px;
+	}
+
 	.events__img-container {
 		max-height: 200px;
 	}
 
-	.events__date-location {
-		top: 214px;
-	}
-
 	.events__card {
-		padding: 50px 25px 50px 35px;
-		min-height: 483px;
+		min-height: 380px;
 	}
 }
