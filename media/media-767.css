@@ -32,16 +32,15 @@
 
 	.header-burger.active span:nth-child(1) {
 		top: 8px;
-		width: 27px;
+		width: 19px;
 	}
 
 	.header-burger.active span:nth-child(3) {
 		top: 8px;
-		width: 27px;
+		width: 19px;
 	}
 
   .header__burger-menu {
-		height: 355px;
 		padding-top: 50px;
 		padding-left: 15px;
 		padding-bottom: 25px;
