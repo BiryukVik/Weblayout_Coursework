@@ -8,18 +8,36 @@ $(document).ready(function() {
 
 // HEADER SUB MENU
 
-document.querySelectorAll(".artstyle-list__button").forEach(item => {
+document.querySelectorAll(".dropdown__simplebar").forEach(dropdown =>
+  {
+    new SimpleBar(dropdown, {
+      autoHide: false,
+      scrollbarMaxSize: 28,
+    });
+  })
+
+const btns = document.querySelectorAll(".artstyle-list__button");
+const dropdowns = document.querySelectorAll(".dropdown");
+const activeClassdropdowns = "dropdown-active";
+const activeClassbtns = "artstyle-list__button-active";
+
+btns.forEach(item => {
   item.addEventListener("click", function() {
-    let listOpen = this.parentElement.querySelector(".artstyle__container");
-    this.classList.toggle("active-art-list-item");
-    listOpen.classList.toggle("active-sub-list");
-    document.querySelectorAll(".artstyle__container").forEach(element => {
-      if (listOpen !=element) {
-        element.classList.remove("active-sub-list");
+    let DropThis = this.parentElement.querySelector(".dropdown");
+    dropdowns.forEach(el => {
+      if (el != DropThis) {
+        el.classList.remove(activeClassdropdowns)
       }
     });
-  });
-});
+    btns.forEach(el => {
+      if (el != this) {
+        el.classList.remove(activeClassbtns)
+      }
+    });
+    DropThis.classList.toggle(activeClassdropdowns);
+    this.classList.toggle(activeClassbtns);
+  })
+})
 
 // HEADER SEARCH FORM
 

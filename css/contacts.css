@@ -1,0 +1,138 @@
+.contacts {
+  margin-bottom: 700px;
+}
+
+.contacts__feedback {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+}
+
+.contacts__place {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__heading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--dark-gray);
+}
+
+.contacts__address {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--dark-gray);
+}
+
+.contacts__form {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.contacts__input {
+  margin-right: 20px;
+  padding: 9px 24px;
+  width: 270px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  color: var(--light-gray);
+  border-radius: 100px;
+  border: 1px solid var(--dark-gray);
+  transition: background-color .3s ease-in-out;
+}
+
+.contacts__form_button {
+  padding: 12px 35px;
+  width: 329px;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: var(--purple);
+  border-radius: 100px;
+  border: 2px solid var(--purple);
+  white-space: nowrap;
+  transition: color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+	transition: border-color .3s ease-in-out;
+}
+
+.contacts__form_button-320 {
+  display: none;
+}
+
+.just-validate-error-label[style^="color: rgb(184, 17, 17)"] {
+  position: absolute;
+  top: -17px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: var(--red) !important;
+}
+
+.just-validate-error-label:last-child {
+  left: 316px;
+}
+
+.just-validate-error-label:first-of-type {
+  left: 25px;
+}
+
+.contacts__social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__sm-heading {
+  margin-bottom: 6px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--dark-gray);
+}
+
+.contacts__sm-link {
+  width: 38.75px;
+  height: 38.75px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: border .3s ease-in-out;
+	transition: box-shadow .3s ease-in-out;
+}
+
+.whatsapp {
+  background-image: url('../img/contacts/contacts_icon_whatsapp.svg')
+}
+
+.telegram {
+  background-image: url('../img/contacts/contacts_icon_tg.svg')
+}
+
+.contacts__links {
+  display: flex;
+  flex-direction: row;
+}
+
+.contacts__sm-link:not(:last-child) {
+  margin-right: 20px;
+}
+
+.contacts__map {
+  position: absolute;
+  left: 0;
+  right: 0;
+  overflow: visible;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}

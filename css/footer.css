@@ -1,0 +1,42 @@
+.footer {
+  position: absolute;
+  width: 100%;
+  background-color: #000;
+  z-index: 25;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 50px;
+}
+
+.footer__logo {
+	position: relative;
+	flex: 0 0 173px;
+}
+
+.footer__logo_img {
+	width: 100%;
+}
+
+.footer__sm {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__link {
+  width: 45px;
+  height: 45px;
+}
+
+.footer__link svg path {
+  transition: fill .3s ease-in-out;
+}
+
+.footer__link:not(:last-child) {
+  margin-right: 20px;
+}

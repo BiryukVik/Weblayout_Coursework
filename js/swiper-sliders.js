@@ -16,13 +16,9 @@ const swiper1 = new Swiper('.hero__swiper', {
 
 const swiper2 = new Swiper('.gallery__swiper', {
   direction: 'horizontal',
-  grid: {
-    rows: 2
-  },
-  slidesPerView: 1,
+  slidesPerView: 3,
   slidesPerGroup: 3,
-  slidesPerColumnFill: 'row',
-  spaceBetween: 34,
+  spaceBetween: 50,
 
   pagination: {
     el: '.gallery__pagination',
@@ -36,28 +32,19 @@ const swiper2 = new Swiper('.gallery__swiper', {
 
   breakpoints: {
     320: {
-      grid: {
-        rows: 1
-      },
       slidesPerView: 1,
       slidesPerGroup: 1,
       spaceBetween: 0,
     },
 
     767.99: {
-      grid: {
-        rows: 2
-      },
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 34,
     },
 
     1549.99: {
-      grid: {
-        rows: 2
-      },
-      slidesPerView: 3,
+      slidesperView: 3,
       slidesPerGroup: 3,
       spaceBetween: 50,
     },
@@ -68,32 +55,95 @@ const swiper2 = new Swiper('.gallery__swiper', {
 
 // EVENTS
 
-if (window.matchMedia('(max-width: 767px)').matches) {
-  const swiper3 = new Swiper('.events__swiper', {
-    direction: 'horizontal',
-    grid: {
-      rows: 1
-    },
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-    spaceBetween: 0,
-  
-    pagination: {
-      el: '.events__pagination',
-      type: 'bullets',
+const swiper3 = new Swiper('.events__swiper', {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  grid: {
+    rows: 1,
+  },
+
+  pagination: {
+    el: '.events__pagination',
+    type: 'bullets',
+  },
+
+  navigation: {
+    nextEl: '.events__swiper-button-next',
+    prevEl: '.events__swiper-button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
     },
 
-    breakpoints: {
-      576: {
-        grid: {
-          rows: 1
-        },
-        slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 20,
-      },
+    767.99: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
     },
-  
-    debugger: true,
-  });
-}
+
+    1023.99: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 34,
+    },
+
+    1549.99: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+  },
+
+  debugger: true,
+});
+
+// PROJECTS
+
+const swiper4 = new Swiper('.projects__swiper', {
+  direction: 'horizontal',
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 50,
+  grid: {
+    rows: 1,
+  },
+
+  navigation: {
+    nextEl: '.projects__swiper-button-next',
+    prevEl: '.projects__swiper-button-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 0,
+    },
+
+    767.99: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 34,
+    },
+
+    1023.99: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 50,
+    },
+
+    1549.99: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 50,
+    },
+  },
+
+  debugger: true,
+});

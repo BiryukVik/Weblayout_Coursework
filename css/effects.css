@@ -87,12 +87,12 @@
 	transition: color 0.3s ease-in-out;
 }
 
-.active-art-list-item svg {
+.artstyle-list__button-active svg {
 	transform: rotate(180deg);
 	transition: all 0.3s ease-in-out;
 }
 
-.active-art-list-item svg path {
+.artstyle-list__button-active svg path {
 	stroke: var(--dark-purple);
 	transition: all 0.3s ease-in-out;
 }
@@ -205,22 +205,18 @@
 
 /* ----------- GALLERY ----------- */
 
-.gallery__link:focus:not(:active),
-.gallery__link:focus:not(:hover) {
-  color: #fff;
-  background: var(--purple);
-	outline: 2px solid var(--purple);
-	outline-offset: -1px;
+.gallery-form__checkbox:focus:not(:active) + label,
+.gallery-form__checkbox:focus:not(:hover) + label {
+	color: var(--lavender);
 }
 
-.gallery__link:hover {
-  color: var(--purple);
-  transition: all .3s ease-in-out;
+.gallery-form__checkbox:focus:not(:active) + label::before,
+.gallery-form__checkbox:focus:not(:hover) + label::before {
+  border-color: var(--lavender);
 }
 
-.gallery__link:active {
-  color: var(--dark-purple);
-  transition: all .3s ease-in-out;
+.gallery-form__checkbox:hover + label::before {
+  border-color: var(--lavender);
 }
 
 .gallery .swiper-slide::before {
@@ -392,4 +388,160 @@
 .time-table__list-button:active {
 	color: var(--dark-purple);
 	border-bottom: none;
+}
+
+/* ----------- EVENTS ----------- */
+
+.events__link:focus:not(:active),
+.events__link:focus:not(:hover) {
+	color: #fff;
+	background-color: var(--purple);
+}
+
+.events__link:hover {
+	color: var(--purple);
+	text-decoration-color: var(--purple);
+	transition: color .3s ease-in-out;
+  transition: text-decoration-color .3s ease-in-out;
+}
+
+.events__link:active {
+	color: var(--dark-purple);
+	text-decoration-color: var(--dark-purple);
+	transition: color .3s ease-in-out;
+  transition: text-decoration-color .3s ease-in-out;
+}
+
+.events__link:visited {
+	color: var(--dark-purple);
+}
+
+/* ----------- PROJECTS ----------- */
+
+.projects__description-link:focus:not(:active),
+.projects__description-link:focus:not(:hover) {
+	background-color: var(--purple);
+}
+
+.projects__description-link:hover {
+	color: var(--purple);
+	text-decoration: underline;
+	text-decoration-color: var(--purple);
+	transition: color .3s ease-in-out;
+  transition: text-decoration .3s ease-in-out;
+  transition: text-decoration-color .3s ease-in-out;
+}
+
+.projects__description-link:active {
+	color: var(--dark-purple);
+	text-decoration: underline;
+	text-decoration-color: var(--dark-purple);
+	transition: color .3s ease-in-out;
+  transition: text-decoration .3s ease-in-out;
+  transition: text-decoration-color .3s ease-in-out;
+}
+
+.projects__description-link:visited {
+	color: var(--dark-purple);
+}
+
+.projects__swiper-slide:focus:not(:active),
+.projects__swiper-slide:focus:not(:hover) {
+	border: 1px solid var(--purple);
+}
+
+.projects__swiper-link:hover img {
+  filter: none;
+	transition: filter .3s ease-in-out;
+}
+
+.projects__swiper-slide:active {
+	border: 1px solid var(--purple);
+	transition: border .3s ease-in-out;
+}
+
+.projects__swiper-link:active img {
+  filter: none;
+	transition: filter .3s ease-in-out;
+}
+
+/* ----------- CONTACTS ----------- */
+
+.contacts__input:focus:not(:active),
+.contacts__input:focus:not(:hover) {
+	background-color: var(--catalog-button-gray);
+}
+
+.contacts__input:hover {
+	background-color: var(--catalog-button-gray);
+	transition: background-color .3s ease-in-out;
+}
+
+.contacts__form_button:focus:not(:active),
+.contacts__form_button:focus:not(:hover) {
+	color: #fff;
+	background-color: var(--purple);
+	transition: color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+}
+
+.contacts__form_button:hover {
+	color: #fff;
+	background-color: var(--purple);
+	transition: color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+}
+
+.contacts__form_button:active {
+	color: #fff;
+	background-color: var(--dark-purple);
+	border-color: var(--dark-purple);
+	transition: color .3s ease-in-out;
+	transition: background-color .3s ease-in-out;
+	transition: border-color .3s ease-in-out;
+}
+
+.contacts__sm-link:focus:not(:active),
+.contacts__sm-link:focus:not(:hover) {
+	box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.5);
+}
+
+.contacts__sm-link:hover {
+	box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.5);
+	transition: box-shadow .3s ease-in-out;
+}
+
+.contacts__sm-link:active {
+	border: 1px solid var(--purple);
+	border-radius: 50%;
+	box-shadow: none;
+	transition: border .3s ease-in-out;
+	transition: box-shadow .3s ease-in-out;
+}
+
+/* ----------- FOOTER ----------- */
+
+.footer__logo:focus::before {
+	content: '';
+	position: absolute;
+	top: -15px;
+	left: -15px;
+	bottom: -15px;
+	right: -15px;
+	border: 2px solid var(--dark-purple);
+}
+
+.footer__link:focus:not(:active) svg path,
+.footer__link:focus:not(:hover) svg path {
+	fill: #fff;
+}
+
+.footer__link:hover svg path {
+	fill: #fff;
+	transition: fill .3s ease-in-out;
+}
+
+.footer__link:active svg path {
+	fill: var(--purple);
+	transition: fill .3s ease-in-out;
 }
